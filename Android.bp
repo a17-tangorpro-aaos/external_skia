@@ -1133,7 +1133,7 @@ rust_ffi_static {
     features: [ "cxx" ],
     target: {
         windows: {
-            enabled: true,
+            enabled: false,
         },
     },
 }
@@ -2135,7 +2135,7 @@ cc_library_static {
         ],
       },
       windows: {
-        enabled: true,
+        enabled: false,
         cflags: [
           "-Wno-unknown-pragmas",
         ],

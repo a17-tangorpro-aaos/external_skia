@@ -370,9 +370,8 @@ pub mod ffi {
     }
 
     unsafe extern "C++" {
-
+        #[cfg(any())]
         include!("src/ports/fontations/src/skpath_bridge.h");
-
         type AxisWrapper;
 
         fn populate_axis(
